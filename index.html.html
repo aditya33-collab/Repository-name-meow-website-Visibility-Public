@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For  KULSII 💖</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #ffb6e6, #ffd1ea);
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        text-align: center;
+    }
+
+    /* Floating hearts */
+    .heart {
+        position: fixed;
+        bottom: -20px;
+        color: #ff5fa2;
+        font-size: 20px;
+        animation: floatUp 6s linear infinite;
+        opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+        0% { transform: translateY(0) scale(1); opacity: 0.8; }
+        100% { transform: translateY(-800px) scale(1.6); opacity: 0; }
+    }
+
+    /* Name animation (cute bounce) */
+    .her-name {
+        margin-top: 120px;
+        font-size: 60px;
+        font-weight: bold;
+        color: #ff3f8f;
+        text-shadow: 0 0 15px rgba(255, 0, 98, 0.4);
+        animation: bounce 2s ease infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
+    /* Letter box */
+    .letter-box {
+        margin: 40px auto;
+        background: white;
+        width: 85%;
+        max-width: 700px;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(255, 0, 100, 0.3);
+        font-size: 18px;
+        color: #444;
+        line-height: 1.6;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #ff2f87;
+        font-weight: 600;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Animated Name -->
+<div class="her-name">For KULSII 💖</div>
+
+<!-- Letter Section -->
+<div class="letter-box">
+    <div class="title">A Letter From Me to You KULSII</div>
+
+    <!-- ✨✨ FOR  KULSII✨✨ -->
+    <p style="opacity: 0.5; font-style: italic;">
+        (KULSII, I just want to say thank you for everything. U are so awesome because talking to you always makes my day best. Even when I’m upset or not in good mood, you somehow make me feel happy because of your behaviour. Your nature is so good, your behaviour is sweet, and you talk in a way that makes me feel very happy. I like how kind, loving, caring, and obv non chalant😝 person you are. Thank you for giving me your time, for listening, and for being there. You make a big difference in my mood. I’m honestly happy and greatful that I met you, and I’m glad we have this connection. Thank you soo muchhhhh for your kindness, your behaviour, your vibe, and for being such a positive part of my life. I love talking to you ever day even if I don't have any topic left to talk about I would still yap about some nonsense things. Thankkkk youuuu soooo muchhhhh Kulsiiii for being with me everyday Thankk youuu sooo muchhhh🥺🫶💗💖)
+    </p>
+</div>
+
+<script>
+    // Create a few floating hearts
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "&#10084;"; // heart symbol
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 7000);
+    }
+
+    // Create hearts slowly, not too many
+    setInterval(createHeart, 1500);
+</script>
+
+</body>
+</html>
